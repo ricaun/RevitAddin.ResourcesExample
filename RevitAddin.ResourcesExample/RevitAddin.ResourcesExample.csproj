@@ -181,6 +181,7 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xaml" />
     <Reference Include="System.Xml" />
@@ -191,11 +192,24 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Extensions\BitmapExtension.cs" />
+    <Compile Include="Properties\Views\Resource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
     <Compile Include="Revit\App.cs" />
     <Compile Include="Revit\Commands\Command.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\ResourcesView.xaml.cs">
+      <DependentUpon>ResourcesView.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\Icons\icon-br.ico" />
+    <Content Include="Resources\Icons\icon-en.ico" />
+    <Content Include="Resources\Images\image-br.png" />
+    <Content Include="Resources\Images\image-en.png" />
     <Content Include="RevitAddin.ResourcesExample.addin" />
     <Content Include="FodyWeavers.xml" />
   </ItemGroup>
@@ -204,6 +218,19 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="PropertyChanged.Fody" Version="2.5.9.0" IncludeAssets="build; compile" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Views\Resource.pt-BR.resx" />
+    <EmbeddedResource Include="Properties\Views\Resource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Views\ResourcesView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <Choose>
     <When Condition="$(Configuration.Contains('2017'))">
