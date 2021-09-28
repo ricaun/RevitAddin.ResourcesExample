@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>RevitAddin.ResourcesExample Application</Name>
+    <Assembly>RevitAddin.ResourcesExample.dll</Assembly>
+    <FullClassName>RevitAddin.ResourcesExample.Revit.App</FullClassName>
+    <ClientId>8ba60ec9-37cf-4953-b423-4393123e1c0b</ClientId>
+    <VendorId>RevitAddin.ResourcesExample</VendorId>
+    <VendorDescription>RevitAddin.ResourcesExample</VendorDescription>
+    <AllowLoadingIntoExistingSession>true</AllowLoadingIntoExistingSession>
+  </AddIn>
+</RevitAddIns>
