@@ -214,7 +214,7 @@
     <Content Include="FodyWeavers.xml" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="9.0.1" IncludeAssets="build; compile" />
+    <PackageReference Include="Newtonsoft.Json" Version="*" IncludeAssets="build; compile" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="PropertyChanged.Fody" Version="2.5.9.0" IncludeAssets="build; compile" />
