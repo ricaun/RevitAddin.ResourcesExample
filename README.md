@@ -10,8 +10,8 @@ This example use [Resource Files][1] to automatically select the language based 
 |French|fr-FR|
 |Italian|it-IT|
 |Dutch|nl-BE|
-|Chinese_Simplified|zh-CHS|
-|Chinese_Traditional|zh-CHT|
+|Chinese_Simplified|zh-CN|
+|Chinese_Traditional|zh-TW|
 |Japanese|ja-JP|
 |Korean|ko-KR|
 |Russian|ru-RU|
